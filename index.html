@@ -1,0 +1,823 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Discover a vast collection of books across all genres. Shop online for fiction, non-fiction, mystery, romance, and science fiction books with great discounts.">
+    <meta name="keywords" content="online bookstore, books, fiction, non-fiction, mystery, romance, science fiction, book shopping">
+    <title>DIU Book Network - Online Book Store</title>
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+    <!-- <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" /> -->
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="icon" type="image/x-icon" href="Images/book1.jpg">
+</head>
+<body>
+<main role="main">
+
+<!---header section--->
+<header class="header" role="banner">
+    <div class="header-1">
+       <a href="#" class="logo" aria-label="Online Book Store - Home">
+           <i class="fas fa-book"></i> DIU Book Network
+       </a>
+
+       <form action="#" method="GET" class="search-form" role="search">
+           <input type="search" name="search" placeholder="Search here..." id="search-box" aria-label="Search for books">
+           <label for="search-box" class="fas fa-search"></label>
+       </form>
+
+
+       <div class="icons">
+        <div id="search-btn" class="fas fa-search" aria-label="Search" role="button" tabindex="0"></div>
+        <a href="pages/wishlist.html" class="fas fa-heart" id="wishlist-icon" aria-label="Wishlist" role="button">
+            <span class="wishlist-count" aria-label="0 items in wishlist">0</span>
+        </a>
+        <a href="pages/cart.html" class="fas fa-shopping-cart" id="cart-icon" aria-label="Shopping Cart" role="button">
+            <span class="cart-count" aria-label="0 items in cart">0</span>
+        </a>
+        <div id="login-btn" class="fas fa-user" aria-label="Login" role="button" tabindex="0"></div>
+
+
+       </div>
+    </div>
+
+
+    <div class="header-2">
+        <nav class="navbar" role="navigation" aria-label="Main navigation">
+            <a href="#home">Home</a>
+            <a href="#categories">Categories</a>
+            <a href="#features">Features</a>
+            <a href="#arrivals">Arrivals</a>
+            <a href="#review">Review</a>
+            <a href="pages/blogs.html">Blogs</a>
+        </nav>
+    </div>
+</header>
+<!-- ok -->
+<!---header section ends--->
+
+<!-- bottom navbar  -->
+ <nav class="bottom-navbar" role="navigation" aria-label="Bottom navigation">
+    <a href="#home" class="fas fa-home" aria-label="Home"></a>
+    <a href="#categories" class="fas fa-th" aria-label="Categories"></a>
+    <a href="#features" class="fas fa-list" aria-label="Features"></a>
+    <a href="#arrivals" class="fas fa-tags" aria-label="New Arrivals"></a>
+    <a href="#review" class="fas fa-comments" aria-label="Reviews"></a>
+    <a href="pages/blogs.html" class="fas fa-blog" aria-label="Blogs"></a>
+ </nav>
+
+
+ <!---login form--->
+
+<div class="login-form-container" role="dialog" aria-label="Login form" aria-hidden="true">
+
+    <div id="close-login-btn" class="fas fa-times" aria-label="Close login form" role="button" tabindex="0"></div>
+
+    <form action="#" method="POST" role="form">
+        <h3>Sign In</h3>
+        <span>Username</span>
+        <input type="email" name="email" class="box" placeholder="Enter your email" id="email" required aria-label="Email address">
+        <span>Password</span>
+        <input type="password" name="password" class="box" placeholder="Enter your password" id="password" required aria-label="Password">
+        <div class="checkbox">
+            <input type="checkbox" name="remember" id="remember-me" aria-label="Remember my login">
+            <label for="remember-me">Remember me</label>
+        </div>
+        <input type="submit" value="Sign In" class="btn" name="submit">
+        <p>Forget password? <a href="#">Click here</a></p>
+        <p>Don't have an account? <a href="#">Create one</a></p>
+    </form>
+</div>
+
+<!---login form ends--->
+
+
+<!---home section starts--->
+
+<section class="home" id="home">
+
+    <div class="row">
+        <div class="content">
+            <h3>Welcome to DIU Book Network</h3>
+            <p>Your one-stop destination for all your reading needs! Explore thousands of books from bestselling authors, discover new releases, and build your personal library with ease. Fast delivery, great prices, and exceptional service await you.</p>
+            <a href="#categories" class="btn">Explore Books</a>
+        </div>
+
+        <div class="swiper books-slider" role="region" aria-label="Books slider">
+            <div class="swiper-wrapper" role="list">
+                <a href="#" class="swiper-slide" role="listitem"><img src="Images/book1.jpg" alt="Dark Psychology Book" loading="lazy"></a>
+                <a href="#" class="swiper-slide" role="listitem"><img src="Images/book2.jpg" alt="Alice Feeney Book" loading="lazy"></a>
+                <a href="#" class="swiper-slide" role="listitem"><img src="Images/book3.jpg" alt="Harry Potter Book" loading="lazy"></a>
+                <a href="#" class="swiper-slide" role="listitem"><img src="Images/book4.jpg" alt="Eloquent JavaScript Book" loading="lazy"></a>
+                <a href="#" class="swiper-slide" role="listitem"><img src="Images/book5.jpg" alt="HTML and CSS Book" loading="lazy"></a>
+                <a href="#" class="swiper-slide" role="listitem"><img src="Images/book6.jpg" alt="Dreyer's English Book" loading="lazy"></a>
+            </div>
+            
+            <img src="Images/stand.jpg" class="stand" alt="Book Stand" loading="lazy">
+
+            
+        </div>
+        
+    </div>
+
+</section>
+
+<!-- home section ends -->
+
+<!-- icon section starts  -->
+
+<section class="icons-container" id="features" role="complementary" aria-label="Features and benefits">
+    <div class="icons icon-shipping">
+        <i class="fas fa-plane" aria-hidden="true"></i>
+        <div class="content">
+            <h3>Free Shipping</h3>
+            <p>On orders over $100</p>
+        </div>
+    </div>
+
+    <div class="icons icon-payment">
+        <i class="fas fa-lock" aria-hidden="true"></i>
+        <div class="content">
+            <h3>Secure Payment</h3>
+            <p>100% secure</p>
+        </div>
+    </div>
+
+    <div class="icons icon-returns">
+        <i class="fas fa-redo-alt" aria-hidden="true"></i>
+        <div class="content">
+            <h3>Easy Returns</h3>
+            <p>Within 10 days</p>
+        </div>
+    </div>
+
+    <div class="icons icon-support">
+        <i class="fas fa-headset" aria-hidden="true"></i>
+        <div class="content">
+            <h3>24/7 Support</h3>
+            <p>Call us anytime</p>
+        </div>
+    </div>
+
+</section>
+
+<!-- categories section starts -->
+<section class="categories" id="categories" role="complementary" aria-label="Book categories">
+    <h1 class="heading"><span>Book Categories</span></h1>
+    <div class="category-grid" role="list">
+        <a href="categories/Fiction.html" class="category-card" role="listitem" aria-label="Fiction">
+            <i class="fas fa-feather-alt" aria-hidden="true"></i>
+            <span class="title">Fiction</span>
+        </a>
+        <a href="categories/Non-Fiction.html" class="category-card" role="listitem" aria-label="Non-Fiction">
+            <i class="fas fa-book-open" aria-hidden="true"></i>
+            <span class="title">Non-Fiction</span>
+        </a>
+        <a href="categories/Science.html" class="category-card" role="listitem" aria-label="Science">
+            <i class="fas fa-atom" aria-hidden="true"></i>
+            <span class="title">Science</span>
+        </a>
+        <a href="categories/Technology.html" class="category-card" role="listitem" aria-label="Technology">
+            <i class="fas fa-microchip" aria-hidden="true"></i>
+            <span class="title">Technology</span>
+        </a>
+        <a href="categories/Computer-Science.html" class="category-card" role="listitem" aria-label="Computer Science">
+            <i class="fas fa-desktop" aria-hidden="true"></i>
+            <span class="title">Computer Science</span>
+        </a>
+        <a href="categories/Programming.html" class="category-card" role="listitem" aria-label="Programming">
+            <i class="fas fa-code" aria-hidden="true"></i>
+            <span class="title">Programming</span>
+        </a>
+        <a href="categories/Web-Development.html" class="category-card" role="listitem" aria-label="Web Development">
+            <i class="fas fa-globe" aria-hidden="true"></i>
+            <span class="title">Web Development</span>
+        </a>
+        <a href="categories/Data-Science.html" class="category-card" role="listitem" aria-label="Data Science">
+            <i class="fas fa-database" aria-hidden="true"></i>
+            <span class="title">Data Science</span>
+        </a>
+        <a href="categories/AI-ML.html" class="category-card" role="listitem" aria-label="AI & ML">
+            <i class="fas fa-robot" aria-hidden="true"></i>
+            <span class="title">AI & ML</span>
+        </a>
+        <a href="categories/Mystery.html" class="category-card" role="listitem" aria-label="Mystery">
+            <i class="fas fa-user-secret" aria-hidden="true"></i>
+            <span class="title">Mystery</span>
+        </a>
+        <a href="categories/Romance.html" class="category-card" role="listitem" aria-label="Romance">
+            <i class="fas fa-heart" aria-hidden="true"></i>
+            <span class="title">Romance</span>
+        </a>
+        <a href="categories/Fantasy.html" class="category-card" role="listitem" aria-label="Fantasy">
+            <i class="fas fa-hat-wizard" aria-hidden="true"></i>
+            <span class="title">Fantasy</span>
+        </a>
+        <a href="categories/Thriller.html" class="category-card" role="listitem" aria-label="Thriller">
+            <i class="fas fa-bolt" aria-hidden="true"></i>
+            <span class="title">Thriller</span>
+        </a>
+        <a href="categories/History.html" class="category-card" role="listitem" aria-label="History">
+            <i class="fas fa-landmark" aria-hidden="true"></i>
+            <span class="title">History</span>
+        </a>
+        <a href="categories/Biography.html" class="category-card" role="listitem" aria-label="Biography">
+            <i class="fas fa-user" aria-hidden="true"></i>
+            <span class="title">Biography</span>
+        </a>
+        <a href="categories/Self-Help.html" class="category-card" role="listitem" aria-label="Self-Help">
+            <i class="fas fa-hands-helping" aria-hidden="true"></i>
+            <span class="title">Self-Help</span>
+        </a>
+        <a href="categories/Children.html" class="category-card" role="listitem" aria-label="Children">
+            <i class="fas fa-child" aria-hidden="true"></i>
+            <span class="title">Children</span>
+        </a>
+        <a href="categories/Young-Adult.html" class="category-card" role="listitem" aria-label="Young Adult">
+            <i class="fas fa-users" aria-hidden="true"></i>
+            <span class="title">Young Adult</span>
+        </a>
+        <a href="categories/Business.html" class="category-card" role="listitem" aria-label="Business">
+            <i class="fas fa-briefcase" aria-hidden="true"></i>
+            <span class="title">Business</span>
+        </a>
+        <a href="categories/Art-Design.html" class="category-card" role="listitem" aria-label="Art & Design">
+            <i class="fas fa-palette" aria-hidden="true"></i>
+            <span class="title">Art & Design</span>
+        </a>
+        <a href="categories/Poetry.html" class="category-card" role="listitem" aria-label="Poetry">
+            <i class="fas fa-quote-right" aria-hidden="true"></i>
+            <span class="title">Poetry</span>
+        </a>
+    </div>
+</section>
+<!-- categories section ends -->
+
+<!-- category books section starts -->
+<section class="category-books" id="category-books" role="region" aria-label="Books by category" style="display: none;">
+    <div class="category-books-grid" role="list"></div>
+</section>
+<!-- category books section ends -->
+
+<!-- icon section ends  -->
+
+<!-- featured section starts  -->
+
+<section class="featured" id="featured" role="complementary" aria-label="Featured books">
+    <h1 class="heading"><span>Featured Books</span></h1>
+    <div class=" swiper featured-slider" role="region" aria-label="Featured books slider">
+        <div class="swiper-wrapper" role="list">
+            <div class="swiper-slide box" role="listitem" data-category="Self-Help">
+                <div class="icons">
+                    <a href="#" class="fas fa-search" aria-label="Search for Dark Psychology book"></a>
+                    <a href="#" class="fas fa-heart" aria-label="Add Dark Psychology to wishlist"></a>
+                    <a href="#" class="fas fa-eye" aria-label="View Dark Psychology book details"></a>
+                </div>
+                <div class="image">
+                    <img src="Images/book1.jpg" alt="Dark Psychology Book Cover" loading="lazy">
+                </div>
+                <div class="content">
+                    <h3>Dark Psychology</h3>
+                    <div class="price">$12.99 <span>$17.99</span></div>
+                    <a href="#" class="cart-btn">Add to Cart</a>
+                </div>
+            </div>
+            <div class="swiper-slide box" data-category="Fiction">
+                <div class="icons">
+                    <a href="#" class="fas fa-search"></a>
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="fas fa-eye"></a>
+                </div>
+                <div class="image">
+                    <img src="Images/book2.jpg" alt="Alice Feeney Book Cover">
+                </div>
+                <div class="content">
+                    <h3>Alice Feeney</h3>
+                    <div class="price">$16.99 <span>$21.99</span></div>
+                    <a href="#" class="cart-btn">Add to Cart</a>
+                </div>
+            </div>
+            <div class="swiper-slide box" data-category="Fantasy">
+                <div class="icons">
+                    <a href="#" class="fas fa-search"></a>
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="fas fa-eye"></a>
+                </div>
+                <div class="image">
+                    <img src="Images/book3.jpg" alt="Harry Potter Book Cover">
+                </div>
+                <div class="content">
+                    <h3>Harry Potter</h3>
+                    <div class="price">$25.99 <span>$30.99</span></div>
+                    <a href="#" class="cart-btn">Add to Cart</a>
+                </div>
+            </div>
+            <div class="swiper-slide box" data-category="Programming">
+                <div class="icons">
+                    <a href="#" class="fas fa-search"></a>
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="fas fa-eye"></a>
+                </div>
+                <div class="image">
+                    <img src="Images/book4.jpg" alt="Eloquent JavaScript Book Cover">
+                </div>
+                <div class="content">
+                    <h3>Eloquent Javascript</h3>
+                    <div class="price">$29.99 <span>$34.99</span></div>
+                    <a href="#" class="cart-btn">Add to Cart</a>
+                </div>
+            </div>
+            <div class="swiper-slide box" data-category="Web Development">
+                <div class="icons">
+                    <a href="#" class="fas fa-search"></a>
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="fas fa-eye"></a>
+                </div>
+                <div class="image">
+                    <img src="Images/book5.jpg" alt="HTML and CSS Book Cover">
+                </div>
+                <div class="content">
+                    <h3>HTML and CSS</h3>
+                    <div class="price">$17.99 <span>$22.99</span></div>
+                    <a href="#" class="cart-btn">Add to Cart</a>
+                </div>
+            </div>
+            <div class="swiper-slide box" data-category="Non-Fiction">
+                <div class="icons">
+                    <a href="#" class="fas fa-search"></a>
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="fas fa-eye"></a>
+                </div>
+                <div class="image">
+                    <img src="Images/book6.jpg" alt="Dreyer's English Book Cover">
+                </div>
+                <div class="content">
+                    <h3>Dreyer's English</h3>
+                    <div class="price">$14.99 <span>$19.99</span></div>
+                    <a href="#" class="cart-btn">Add to Cart</a>
+                </div>
+            </div>
+            <div class="swiper-slide box" data-category="Computer Science">
+                <div class="icons">
+                    <a href="#" class="fas fa-search"></a>
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="fas fa-eye"></a>
+                </div>
+                <div class="image">
+                    <img src="Images/book7.jpg" alt="Computer Studies Book Cover">
+                </div>
+                <div class="content">
+                    <h3>Computer Studies</h3>
+                    <div class="price">$29.99 <span>$34.99</span></div>
+                    <a href="#" class="cart-btn">Add to Cart</a>
+                </div>
+            </div>
+            <div class="swiper-slide box" data-category="Computer Science">
+                <div class="icons">
+                    <a href="#" class="fas fa-search"></a>
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="fas fa-eye"></a>
+                </div>
+                <div class="image">
+                    <img src="Images/book8.jpg" alt="Computer Science Book Cover">
+                </div>
+                <div class="content">
+                    <h3>Computer Science</h3>
+                    <div class="price">$31.99 <span>$36.99</span></div>
+                    <a href="#" class="cart-btn">Add to Cart</a>
+                </div>
+            </div>
+            <div class="swiper-slide box" data-category="Technology">
+                <div class="icons">
+                    <a href="#" class="fas fa-search"></a>
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="fas fa-eye"></a>
+                </div>
+                <div class="image">
+                    <img src="Images/book9.jpg" alt="Technology and Society Book Cover">
+                </div>
+                <div class="content">
+                    <h3>Technology and Society</h3>
+                    <div class="price">$28.99 <span>$33.99</span></div>
+                    <a href="#" class="cart-btn">Add to Cart</a>
+                </div>
+            </div>
+            <div class="swiper-slide box" data-category="Technology">
+                <div class="icons">
+                    <a href="#" class="fas fa-search"></a>
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="fas fa-eye"></a>
+                </div>
+                <div class="image">
+                    <img src="Images/book10.jpg" alt="IT Tools and Application Book Cover">
+                </div>
+                <div class="content">
+                    <h3>IT Tools and Application</h3>
+                    <div class="price">$19.99 <span>$24.99</span></div>
+                    <a href="#" class="cart-btn">Add to Cart</a>
+                </div>
+            </div>
+
+        </div>
+        <div class="swiper-button-next-featured" aria-label="Next slide"></div>
+        <div class="swiper-button-prev-featured" aria-label="Previous slide"></div>
+    </div>
+</section>
+
+<!-- featured section ends  -->
+
+
+<!-- arribals selection starts -->
+
+<section class="arrivals" id="arrivals" role="complementary" aria-label="New arrivals">
+  <h1 class="heading"><span>New Arrivals</span></h1>
+
+  <div class="swiper arrivals-slider" role="region" aria-label="New arrivals slider">
+    <div class="swiper-wrapper" role="list">
+
+              <!-- Book 1 -->
+        <a href="#featured" class="swiper-slide box" role="listitem" data-category="Self-Help">
+          <div class="image">
+            <img src="Images/book1.jpg" alt="Dark Psychology Book - New Arrival">
+          </div>
+          <div class="content">
+            <h3>Dark Psychology</h3>
+            <div class="price">$14.99 <span>$17.99</span></div>
+            <div class="stars" aria-label="4.5 out of 5 stars">
+              <i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i>
+              <i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i>
+              <i class="fas fa-star-half-alt" aria-hidden="true"></i>
+            </div>
+          </div>
+        </a>
+
+              <!-- Book 2 -->
+        <a href="#" class="swiper-slide box" data-category="Fiction">
+          <div class="image">
+            <img src="Images/book2.jpg" alt="Alice Feeney Book - New Arrival">
+          </div>
+          <div class="content">
+            <h3>Alice Feeney</h3>
+            <div class="price">$13.99 <span>$15.99</span></div>
+            <div class="stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i>
+              <i class="fas fa-star"></i><i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+          </div>
+        </a>
+
+              <!-- Book 3 -->
+        <a href="#" class="swiper-slide box" data-category="Fantasy">
+          <div class="image">
+            <img src="Images/book3.jpg" alt="Harry Potter Book - New Arrival">
+          </div>
+          <div class="content">
+            <h3>Harry Potter</h3>
+            <div class="price">$13.99 <span>$17.99</span></div>
+            <div class="stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i>
+              <i class="fas fa-star"></i><i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+          </div>
+        </a>
+
+              <!-- Book 4 -->
+        <a href="#" class="swiper-slide box" data-category="Programming">
+          <div class="image">
+            <img src="Images/book4.jpg" alt="Eloquent JavaScript Book - New Arrival">
+          </div>
+          <div class="content">
+            <h3>Eloquent JavaScript</h3>
+            <div class="price">$11.99 <span>$17.99</span></div>
+            <div class="stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i>
+              <i class="fas fa-star"></i><i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+          </div>
+        </a>
+
+              <!-- Book 5 -->
+        <a href="#" class="swiper-slide box" data-category="Web Development">
+          <div class="image">
+            <img src="Images/book5.jpg" alt="HTML and CSS Book - New Arrival">
+          </div>
+          <div class="content">
+            <h3>HTML and CSS</h3>
+            <div class="price">$13.99 <span>$19.99</span></div>
+            <div class="stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i>
+              <i class="fas fa-star"></i><i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+          </div>
+        </a>
+
+              <!-- Book 6 -->
+        <a href="#" class="swiper-slide box" data-category="Non-Fiction">
+          <div class="image">
+            <img src="Images/book6.jpg" alt="Dreyer's English Book - New Arrival">
+          </div>
+          <div class="content">
+            <h3>Dreyer's English</h3>
+            <div class="price">$10.99 <span>$14.99</span></div>
+            <div class="stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i>
+              <i class="fas fa-star"></i><i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+          </div>
+        </a>
+
+              <!-- Book 7 -->
+        <a href="#" class="swiper-slide box" data-category="Computer Science">
+          <div class="image">
+            <img src="Images/book7.jpg" alt="Computer Studies Book - New Arrival">
+          </div>
+          <div class="content">
+            <h3>Computer Studies</h3>
+            <div class="price">$12.99 <span>$17.99</span></div>
+            <div class="stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i>
+              <i class="fas fa-star"></i><i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+          </div>
+        </a>
+
+              <!-- Book 8 -->
+        <a href="#" class="swiper-slide box" data-category="Computer Science">
+          <div class="image">
+            <img src="Images/book8.jpg" alt="Computer Science Book - New Arrival">
+          </div>
+          <div class="content">
+            <h3>Computer Science</h3>
+            <div class="price">$11.99 <span>$15.99</span></div>
+            <div class="stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i>
+              <i class="fas fa-star"></i><i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+          </div>
+        </a>
+
+              <!-- Book 9 -->
+        <a href="#" class="swiper-slide box" data-category="Technology">
+          <div class="image">
+            <img src="Images/book9.jpg" alt="Technology and Society Book - New Arrival">
+          </div>
+          <div class="content">
+            <h3>Technology and Society</h3>
+            <div class="price">$13.99 <span>$18.99</span></div>
+            <div class="stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i>
+              <i class="fas fa-star"></i><i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+          </div>
+        </a>
+
+              <!-- Book 10 -->
+        <a href="#" class="swiper-slide box" data-category="Technology">
+          <div class="image">
+            <img src="Images/book10.jpg" alt="IT Tools and Application Book - New Arrival">
+          </div>
+          <div class="content">
+            <h3>IT Tools and Application</h3>
+            <div class="price">$12.99 <span>$15.99</span></div>
+            <div class="stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i>
+              <i class="fas fa-star"></i><i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+          </div>
+        </a>
+
+    </div>
+        <div class="swiper-button-next-arrivals" aria-label="Next slide"></div>
+        <div class="swiper-button-prev-arrivals" aria-label="Previous slide"></div>
+  </div>
+</section>
+
+
+<!-- arrivals selection end -->
+
+<!-- deal section starts -->
+
+<section class="deal" role="complementary" aria-label="Deal of the day">
+    <div class="content">
+        <h3>Special Offer</h3>
+        <h1>Limited Time Discounts</h1>
+        <p>Get amazing savings on your favorite books! Our special collection features discounted prices on popular titles, bestsellers, and academic books. Perfect for students, book lovers, and collectors. Stock up on your reading list while these deals last - new deals every week!</p>
+        <a href="#categories" class="btn">Browse Deals</a>
+    </div>
+
+    <div class="image">
+        <img src="Images/WhatsApp Image 2025-08-31 at 23.56.59_4554276f.jpg" alt="Deal of the day promotion image" loading="lazy">
+    </div>
+
+</section>
+
+
+<!-- deal section ends -->
+
+
+
+
+<!--  review section starts  -->   
+<section class="review" id="review" role="complementary" aria-label="Client reviews">
+  <h1 class="heading"><span>Client Reviews</span></h1>
+
+  <div class="swiper review-slider" role="region" aria-label="Client reviews slider">
+    <div class="swiper-wrapper" role="list">
+
+      <div class="swiper-slide box" role="listitem">
+        <div class="avatar">
+          <img src="" alt="Khandokar Masud" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+          <i class="fas fa-user" style="display: none;"></i>
+        </div>
+        <h3>Khandokar Masud</h3>
+        <p>Excellent book collection! I found all the programming books I needed for my studies. The prices are affordable and delivery was super fast. Highly recommended for students!</p>
+        <div class="stars" aria-label="5 out of 5 stars">
+          <i class="fas fa-star" aria-hidden="true"></i>
+          <i class="fas fa-star" aria-hidden="true"></i>
+          <i class="fas fa-star" aria-hidden="true"></i>
+          <i class="fas fa-star" aria-hidden="true"></i>
+          <i class="fas fa-star" aria-hidden="true"></i>
+        </div>
+      </div>
+
+      <div class="swiper-slide box" role="listitem">
+        <div class="avatar">
+          <img src="" alt="Kamrul Hossain" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+          <i class="fas fa-user" style="display: none;"></i>
+        </div>
+        <h3>Kamrul Hossain</h3>
+        <p>Amazing experience! The website is easy to navigate and I love how books are organized by categories. Found my favorite fiction novels at great prices. Will definitely shop again!</p>
+        <div class="stars" aria-label="5 out of 5 stars">
+          <i class="fas fa-star" aria-hidden="true"></i>
+          <i class="fas fa-star" aria-hidden="true"></i>
+          <i class="fas fa-star" aria-hidden="true"></i>
+          <i class="fas fa-star" aria-hidden="true"></i>
+          <i class="fas fa-star" aria-hidden="true"></i>
+        </div>
+      </div>
+
+      <div class="swiper-slide box" role="listitem">
+        <div class="avatar">
+          <img src="" alt="Moriam Akter" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+          <i class="fas fa-user" style="display: none;"></i>
+        </div>
+        <h3>Moriam Akter</h3>
+        <p>Best online bookstore in Bangladesh! Great customer service and the book quality is excellent. I've ordered multiple times and every delivery was perfect. Love their deals and discounts!</p>
+        <div class="stars" aria-label="5 out of 5 stars">
+          <i class="fas fa-star" aria-hidden="true"></i>
+          <i class="fas fa-star" aria-hidden="true"></i>
+          <i class="fas fa-star" aria-hidden="true"></i>
+          <i class="fas fa-star" aria-hidden="true"></i>
+          <i class="fas fa-star" aria-hidden="true"></i>
+        </div>
+      </div>
+
+      <div class="swiper-slide box" role="listitem">
+        <div class="avatar">
+          <img src="" alt="Umaya Jannat Urmi" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+          <i class="fas fa-user" style="display: none;"></i>
+        </div>
+        <h3>Umaya Jannat Urmi</h3>
+        <p>Fantastic selection of books across all genres! The book descriptions are detailed and helpful. My orders arrived in perfect condition. This is now my go-to bookstore for all my reading needs.</p>
+        <div class="stars" aria-label="4.5 out of 5 stars">
+          <i class="fas fa-star" aria-hidden="true"></i>
+          <i class="fas fa-star" aria-hidden="true"></i>
+          <i class="fas fa-star" aria-hidden="true"></i>
+          <i class="fas fa-star" aria-hidden="true"></i>
+          <i class="fas fa-star-half-alt" aria-hidden="true"></i>
+        </div>
+      </div>
+
+      <div class="swiper-slide box" role="listitem">
+        <div class="avatar">
+          <img src="" alt="Tas Kir" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+          <i class="fas fa-user" style="display: none;"></i>
+        </div>
+        <h3>Tas Kir</h3>
+        <p>Outstanding service! I appreciate the variety of books available, especially the technical and self-help sections. The website design is user-friendly and checkout process is smooth. Highly satisfied!</p>
+        <div class="stars" aria-label="5 out of 5 stars">
+          <i class="fas fa-star" aria-hidden="true"></i>
+          <i class="fas fa-star" aria-hidden="true"></i>
+          <i class="fas fa-star" aria-hidden="true"></i>
+          <i class="fas fa-star" aria-hidden="true"></i>
+          <i class="fas fa-star" aria-hidden="true"></i>
+        </div>
+      </div>
+
+    </div>
+    
+        <div class="swiper-button-next-review"></div>
+        <div class="swiper-button-prev-review"></div>
+  </div>
+</section>
+<!--  review section end  --> 
+
+
+
+
+</main>
+
+<!-- footer section starts  -->
+
+<section class="footer" role="contentinfo">
+  <div class="box-container" role="list">
+
+    <div class="box" role="listitem">
+      <h3>Our Locations</h3>
+      <a href="pages/locations.html"><i class="fas fa-map-marker-alt" aria-hidden="true"></i> Bangladesh</a>
+      <a href="pages/locations.html"><i class="fas fa-map-marker-alt" aria-hidden="true"></i> India</a>
+      <a href="pages/locations.html"><i class="fas fa-map-marker-alt" aria-hidden="true"></i> Pakistan</a>
+      <a href="pages/locations.html"><i class="fas fa-map-marker-alt" aria-hidden="true"></i> USA</a>
+      <a href="pages/locations.html"><i class="fas fa-map-marker-alt" aria-hidden="true"></i> Canada</a>
+      <a href="pages/locations.html"><i class="fas fa-map-marker-alt" aria-hidden="true"></i> Australia</a>
+    </div>
+
+    <div class="box" role="listitem">
+      <h3>Quick Links</h3>
+      <a href="index.html#home"><i class="fas fa-arrow-right" aria-hidden="true"></i> Home</a>
+      <a href="pages/featured.html"><i class="fas fa-arrow-right" aria-hidden="true"></i> Featured</a>
+      <a href="pages/arrivals.html"><i class="fas fa-arrow-right" aria-hidden="true"></i> Arrivals</a>
+      <a href="pages/reviews.html"><i class="fas fa-arrow-right" aria-hidden="true"></i> Reviews</a>
+      <a href="pages/blogs.html"><i class="fas fa-arrow-right" aria-hidden="true"></i> Blogs</a>
+    </div>
+
+    <div class="box" role="listitem">
+      <h3>Extra Links</h3>
+      <a href="pages/account-info.html"><i class="fas fa-arrow-right" aria-hidden="true"></i> Account Info</a>
+      <a href="pages/ordered-items.html"><i class="fas fa-arrow-right" aria-hidden="true"></i> Ordered Items</a>
+      <a href="pages/privacy-policy.html"><i class="fas fa-arrow-right" aria-hidden="true"></i> Privacy Policy</a>
+      <a href="pages/payment-method.html"><i class="fas fa-arrow-right" aria-hidden="true"></i> Payment Method</a>
+      <a href="pages/our-services.html"><i class="fas fa-arrow-right" aria-hidden="true"></i> Our Services</a>
+    </div>
+
+    <div class="box" role="listitem">
+      <h3>Contact Info</h3>
+      <a href="tel:+8801518955321"><i class="fas fa-phone" aria-hidden="true"></i> +88015**********</a>
+      <a href="tel:+8801704590269"><i class="fas fa-phone" aria-hidden="true"></i> +88017**********</a>
+      <a href="tel:+8801842528866"><i class="fas fa-phone" aria-hidden="true"></i> +88018**********</a>
+      <a href="mailto:info@diubooknetwork.com" style="margin-top: 1rem; display: block;"><i class="fas fa-envelope" aria-hidden="true"></i> info@diubooknetwork.com</a>
+      <div class="map-wrapper" style="margin-top: 2rem; border-radius: 1rem; overflow: hidden; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3651.4249776049155!2d90.40367031493006!3d23.78111228457778!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c70c15ea1de1%3A0x97856381e88fb311!2sDaffodil%20International%20University!5e0!3m2!1sen!2sbd!4v1642345678901!5m2!1sen!2sbd" 
+                width="100%" 
+                height="200" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade"
+                title="DIU Book Network Location Map"></iframe>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="share" role="list" aria-label="Social media links">
+    <a href="#" class="fab fa-facebook" aria-label="Facebook" role="listitem"></a>
+    <a href="#" class="fab fa-facebook-messenger" aria-label="Facebook Messenger" role="listitem"></a>
+    <a href="#" class="fab fa-twitter" aria-label="Twitter" role="listitem"></a>
+    <a href="#" class="fab fa-instagram" aria-label="Instagram" role="listitem"></a>
+    <a href="#" class="fab fa-linkedin" aria-label="LinkedIn" role="listitem"></a>
+    <a href="#" class="fab fa-pinterest" aria-label="Pinterest" role="listitem"></a>
+  </div>
+
+  <div class="credit" role="contentinfo">Created by <span class="credit-name" style="color: #7c3aed;">Kamrul</span>, <span class="credit-name" style="color: #0d9488;">Khandokar</span>, <span class="credit-name" style="color: #f97316;">Moriam</span>, <span class="credit-name" style="color: #ec4899;">Umaya</span>, <span class="credit-name" style="color: #3b82f6;">Tas</span> | © <span id="current-year"></span> All rights reserved!</div>
+  
+</section>
+
+<!-- footer section ends  -->
+
+
+<!-- loader  -->
+
+<div class="loader-container">
+  <img src="https://i.pinimg.com/originals/c3/42/01/c34201153d2aa51fa57ee2f7c11b4c3d.gif" alt="">
+</div>
+
+
+
+
+
+
+
+
+
+<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js" defer></script>
+<!-- <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script> -->
+<script src="js/index.js" defer></script>    
+    
+</body>
+</html>
+

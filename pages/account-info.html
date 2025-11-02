@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Account Info - DIU Book Network</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+	<link rel="stylesheet" href="../CSS/style.css">
+	<link rel="icon" type="image/x-icon" href="../Images/book1.jpg">
+</head>
+<body>
+	<header class="header" role="banner">
+		<div class="header-1">
+			<a href="../index.html" class="logo" aria-label="DIU Book Network - Home">
+				<i class="fas fa-book"></i> DIU Book Network
+			</a>
+			<div class="icons">
+				<a href="../cart.html" class="fas fa-shopping-cart" id="cart-icon" aria-label="Shopping Cart" role="button">
+					<span class="cart-count" aria-label="0 items in cart">0</span>
+				</a>
+			</div>
+		</div>
+	</header>
+
+	<section class="page-section" style="padding: 12rem 2rem 5rem; min-height: 100vh; background: #f5f5f5;">
+		<div class="container" style="max-width: 800px; margin: 0 auto;">
+			<h1 class="heading" style="font-size: 3rem; color: var(--black); margin-bottom: 3rem; text-align: center;">Account Information</h1>
+			
+			<div class="account-info" style="background: white; border-radius: 1rem; padding: 3rem; box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.1);">
+				<div style="text-align: center; margin-bottom: 3rem;">
+					<div style="width: 100px; height: 100px; background: var(--green); border-radius: 50%; margin: 0 auto 2rem; display: flex; align-items: center; justify-content: center;">
+						<i class="fas fa-user" style="font-size: 4rem; color: white;"></i>
+					</div>
+					<h2 style="font-size: 2.4rem; color: var(--black); margin-bottom: 1rem;">User Account</h2>
+					<p style="font-size: 1.6rem; color: var(--light-color);">Manage your account settings and preferences</p>
+				</div>
+
+				<div class="info-section" style="margin-bottom: 2rem; padding: 2rem; background: #f5f5f5; border-radius: 0.5rem;">
+					<h3 style="font-size: 2rem; color: var(--black); margin-bottom: 1.5rem;"><i class="fas fa-info-circle" style="color: var(--green); margin-right: 1rem;"></i>Personal Information</h3>
+					<p style="font-size: 1.6rem; color: var(--light-color); margin-bottom: 1rem;">Name: Your Name</p>
+					<p style="font-size: 1.6rem; color: var(--light-color); margin-bottom: 1rem;">Email: your.email@example.com</p>
+					<p style="font-size: 1.6rem; color: var(--light-color);">Phone: +XXX-XXX-XXXX</p>
+				</div>
+
+				<div class="info-section" style="margin-bottom: 2rem; padding: 2rem; background: #f5f5f5; border-radius: 0.5rem;">
+					<h3 style="font-size: 2rem; color: var(--black); margin-bottom: 1.5rem;"><i class="fas fa-lock" style="color: var(--green); margin-right: 1rem;"></i>Security</h3>
+					<p style="font-size: 1.6rem; color: var(--light-color); margin-bottom: 1rem;">Change Password</p>
+					<p style="font-size: 1.6rem; color: var(--light-color);">Two-Factor Authentication: Not Enabled</p>
+				</div>
+
+				<div style="text-align: center; margin-top: 3rem;">
+					<a href="../index.html" class="btn">Back to Home</a>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<script>
+		document.addEventListener('DOMContentLoaded', () => {
+			function getCartItems(){
+				try { return JSON.parse(localStorage.getItem('cartItems')||'[]'); } catch { return []; }
+			}
+			function getCartCount(){ return getCartItems().reduce((sum,it)=>sum + (it.quantity||1), 0); }
+			const countEl = document.querySelector('.cart-count');
+			if (countEl) countEl.innerText = getCartCount();
+		});
+	</script>
+</body>
+</html>
+

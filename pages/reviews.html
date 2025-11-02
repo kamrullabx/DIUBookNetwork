@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Reviews - DIU Book Network</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+	<link rel="stylesheet" href="../CSS/style.css">
+	<link rel="icon" type="image/x-icon" href="../Images/book1.jpg">
+</head>
+<body>
+	<header class="header" role="banner">
+		<div class="header-1">
+			<a href="../index.html" class="logo" aria-label="DIU Book Network - Home">
+				<i class="fas fa-book"></i> DIU Book Network
+			</a>
+			<div class="icons">
+				<a href="cart.html" class="fas fa-shopping-cart" id="cart-icon" aria-label="Shopping Cart" role="button">
+					<span class="cart-count" aria-label="0 items in cart">0</span>
+				</a>
+			</div>
+		</div>
+	</header>
+
+	<section class="page-section" style="padding: 12rem 2rem 5rem; min-height: 100vh; background: #f5f5f5;">
+		<div class="container" style="max-width: 1200px; margin: 0 auto;">
+			<h1 class="heading" style="font-size: 3rem; color: var(--black); margin-bottom: 3rem; text-align: center;">Customer Reviews</h1>
+			<p style="font-size: 1.8rem; color: var(--light-color); text-align: center; margin-bottom: 5rem;">See what our customers are saying about us</p>
+			
+			<div class="reviews-content" style="background: white; border-radius: 1rem; padding: 3rem; box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.1); margin-bottom: 3rem;">
+				<p style="text-align: center; font-size: 1.6rem; color: var(--light-color);">View customer reviews on the <a href="../index.html#review" style="color: var(--green);">home page</a>.</p>
+			</div>
+			
+			<div style="text-align: center;">
+				<a href="../index.html" class="btn" style="display: inline-block;">
+					<i class="fas fa-home" style="margin-right: 0.5rem;"></i> Back to Home
+				</a>
+			</div>
+		</div>
+	</section>
+
+	<script>
+		document.addEventListener('DOMContentLoaded', () => {
+			function getCartItems(){
+				try { return JSON.parse(localStorage.getItem('cartItems')||'[]'); } catch { return []; }
+			}
+			function getCartCount(){ return getCartItems().reduce((sum,it)=>sum + (it.quantity||1), 0); }
+			const countEl = document.querySelector('.cart-count');
+			if (countEl) countEl.innerText = getCartCount();
+		});
+	</script>
+</body>
+</html>
+

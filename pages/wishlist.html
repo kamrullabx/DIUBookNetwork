@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>My Wishlist - DIU Book Network</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+	<link rel="stylesheet" href="../CSS/style.css">
+	<link rel="icon" type="image/x-icon" href="../Images/book1.jpg">
+</head>
+<body>
+	<header class="header" role="banner">
+		<div class="header-1">
+			<a href="../index.html" class="logo" aria-label="DIU Book Network - Home">
+				<i class="fas fa-book"></i> DIU Book Network
+			</a>
+			<div class="icons">
+				<a href="#" class="fas fa-heart" id="wishlist-icon" aria-label="Wishlist" role="button">
+					<span class="wishlist-count" aria-label="0 items in wishlist">0</span>
+				</a>
+				<a href="cart.html" class="fas fa-shopping-cart" id="cart-icon" aria-label="Shopping Cart" role="button">
+					<span class="cart-count" aria-label="0 items in cart">0</span>
+				</a>
+			</div>
+		</div>
+	</header>
+
+	<section class="cart-section" id="wishlist-section" style="padding: 12rem 2rem 5rem; min-height: 100vh; background: var(--bg-light);">
+		<div class="container" style="max-width: 1200px; margin: 0 auto;">
+			<h1 class="heading" style="margin-bottom: 3rem;">My Wishlist</h1>
+			
+			<div class="cart-wrapper" style="display: grid; grid-template-columns: 1fr; gap: 3rem;">
+				<div class="wishlist-items" id="wishlist-items">
+					<!-- Wishlist items will be dynamically inserted here -->
+				</div>
+				
+				<div class="empty-cart" id="empty-wishlist" style="display: none; text-align: center; padding: 5rem 2rem; background: white; border-radius: 1rem; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
+					<i class="fas fa-heart" style="font-size: 5rem; color: var(--light-color); margin-bottom: 2rem; opacity: 0.5;"></i>
+					<h2 style="font-size: 2.4rem; color: var(--black); margin-bottom: 1rem;">Your wishlist is empty</h2>
+					<p style="font-size: 1.6rem; color: var(--light-color); margin-bottom: 3rem;">Add some books to your wishlist to save them for later!</p>
+					<a href="../index.html" class="btn" style="display: inline-block;">Continue Shopping</a>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="footer" role="contentinfo">
+		<div class="box-container" role="list">
+			<div class="box" role="listitem">
+				<h3>Our Locations</h3>
+				<a href="locations.html"><i class="fas fa-map-marker-alt" aria-hidden="true"></i> Bangladesh</a>
+				<a href="locations.html"><i class="fas fa-map-marker-alt" aria-hidden="true"></i> India</a>
+				<a href="locations.html"><i class="fas fa-map-marker-alt" aria-hidden="true"></i> Pakistan</a>
+				<a href="locations.html"><i class="fas fa-map-marker-alt" aria-hidden="true"></i> USA</a>
+				<a href="locations.html"><i class="fas fa-map-marker-alt" aria-hidden="true"></i> Canada</a>
+				<a href="locations.html"><i class="fas fa-map-marker-alt" aria-hidden="true"></i> Australia</a>
+			</div>
+
+			<div class="box" role="listitem">
+				<h3>Quick Links</h3>
+				<a href="../index.html#home"><i class="fas fa-arrow-right" aria-hidden="true"></i> Home</a>
+				<a href="featured.html"><i class="fas fa-arrow-right" aria-hidden="true"></i> Featured</a>
+				<a href="arrivals.html"><i class="fas fa-arrow-right" aria-hidden="true"></i> Arrivals</a>
+				<a href="reviews.html"><i class="fas fa-arrow-right" aria-hidden="true"></i> Reviews</a>
+				<a href="blogs.html"><i class="fas fa-arrow-right" aria-hidden="true"></i> Blogs</a>
+			</div>
+
+			<div class="box" role="listitem">
+				<h3>Extra Links</h3>
+				<a href="account-info.html"><i class="fas fa-arrow-right" aria-hidden="true"></i> Account Info</a>
+				<a href="ordered-items.html"><i class="fas fa-arrow-right" aria-hidden="true"></i> Ordered Items</a>
+				<a href="privacy-policy.html"><i class="fas fa-arrow-right" aria-hidden="true"></i> Privacy Policy</a>
+				<a href="payment-method.html"><i class="fas fa-arrow-right" aria-hidden="true"></i> Payment Method</a>
+				<a href="our-services.html"><i class="fas fa-arrow-right" aria-hidden="true"></i> Our Services</a>
+			</div>
+
+			<div class="box" role="listitem">
+				<h3>Contact Info</h3>
+				<a href="tel:+8801518955321"><i class="fas fa-phone" aria-hidden="true"></i> +88015**********</a>
+				<a href="tel:+8801704590269"><i class="fas fa-phone" aria-hidden="true"></i> +88017**********</a>
+				<a href="tel:+8801842528866"><i class="fas fa-phone" aria-hidden="true"></i> +88018**********</a>
+				<a href="mailto:info@diubooknetwork.com" style="margin-top: 1rem; display: block;"><i class="fas fa-envelope" aria-hidden="true"></i> info@diubooknetwork.com</a>
+				<div class="map-wrapper" style="margin-top: 2rem; border-radius: 1rem; overflow: hidden; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3651.4249776049155!2d90.40367031493006!3d23.78111228457778!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c70c15ea1de1%3A0x97856381e88fb311!2sDaffodil%20International%20University!5e0!3m2!1sen!2sbd!4v1642345678901!5m2!1sen!2sbd" 
+							width="100%" 
+							height="200" 
+							style="border:0;" 
+							allowfullscreen="" 
+							loading="lazy" 
+							referrerpolicy="no-referrer-when-downgrade"
+							title="DIU Book Network Location Map"></iframe>
+				</div>
+			</div>
+		</div>
+
+		<div class="share" role="list" aria-label="Social media links">
+			<a href="#" class="fab fa-facebook" aria-label="Facebook" role="listitem"></a>
+			<a href="#" class="fab fa-facebook-messenger" aria-label="Facebook Messenger" role="listitem"></a>
+			<a href="#" class="fab fa-twitter" aria-label="Twitter" role="listitem"></a>
+			<a href="#" class="fab fa-instagram" aria-label="Instagram" role="listitem"></a>
+			<a href="#" class="fab fa-linkedin" aria-label="LinkedIn" role="listitem"></a>
+			<a href="#" class="fab fa-pinterest" aria-label="Pinterest" role="listitem"></a>
+		</div>
+
+		<div class="credit" role="contentinfo">Created by <span class="credit-name" style="color: #7c3aed;">Kamrul</span>, <span class="credit-name" style="color: #0d9488;">Khandokar</span>, <span class="credit-name" style="color: #f97316;">Moriam</span>, <span class="credit-name" style="color: #ec4899;">Umaya</span>, <span class="credit-name" style="color: #3b82f6;">Tas</span> | © <span id="current-year"></span> All rights reserved!</div>
+	</section>
+
+	<script src="../js/wishlist.js" defer></script>
+	<script>
+		// Update year automatically
+		document.addEventListener('DOMContentLoaded', () => {
+			const yearEl = document.getElementById('current-year');
+			if (yearEl) yearEl.textContent = new Date().getFullYear();
+		});
+	</script>
+</body>
+</html>
+

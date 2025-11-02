@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Art & Design - DIU Book Network</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+	<link rel="stylesheet" href="../CSS/style.css">
+	<link rel="icon" type="image/x-icon" href="../Images/book1.jpg">
+</head>
+<body>
+	<header class="header" role="banner">
+		<div class="header-1">
+			<a href="../index.html" class="logo" aria-label="Online Book Store - Home">
+				<i class="fas fa-book"></i> DIU Book Network
+			</a>
+			<div class="icons">
+				<a href="../pages/cart.html" class="fas fa-shopping-cart" id="cart-icon" aria-label="Shopping Cart" role="button">
+					<span class="cart-count" aria-label="0 items in cart">0</span>
+				</a>
+			</div>
+		</div>
+	</header>
+
+	<section class="category-banner" aria-label="Art & Design category banner">
+		<div class="banner-bg" style="background-image:url('../Images/books.jpg'), url('../Images/book3.jpg');"></div>
+		<div class="banner-overlay"></div>
+		<div class="banner-content">
+			<h1>Art & Design</h1>
+			<p>Creativity, techniques, and design inspiration.</p>
+			<nav class="breadcrumb" aria-label="Breadcrumb">
+				<a href="../index.html">Home</a>
+				<span>/</span>
+				<a href="../pages/categories.html">Categories</a>
+				<span>/</span>
+				<span>Art & Design</span>
+			</nav>
+		</div>
+	</section>
+
+	<section class="category-books" id="category-books" role="main" aria-label="Books by category" style="padding-top: 3rem;">
+		<div class="category-books-grid" role="list"></div>
+	</section>
+
+	<script>window.CATEGORY_NAME = 'Art & Design';</script>
+	<script src="../js/category.js" defer></script>
+</body>
+</html>
