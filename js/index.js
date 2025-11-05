@@ -320,7 +320,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const credit = document.querySelector(".footer .credit");
   const year = new Date().getFullYear();
   if (credit) {
-    credit.innerHTML = `Created by <span class="credit-name" style="color: #7c3aed;">Kamrul</span>, <span class="credit-name" style="color: #0d9488;">Khandokar</span>, <span class="credit-name" style="color: #f97316;">Moriam</span>, <span class="credit-name" style="color: #ec4899;">Umaya</span>, <span class="credit-name" style="color: #3b82f6;">Tas</span> | &copy; ${year} All rights reserved!`;
+    credit.innerHTML = `Created by <span class="credit-name" style="color: #7c3aed;">Kamrul</span>, <span class="credit-name" style="color: #0d9488;">Masud</span>, <span class="credit-name" style="color: #f97316;">Moriam</span>, <span class="credit-name" style="color: #ec4899;">Umaya</span>, <span class="credit-name" style="color: #3b82f6;">Tanvir</span>, <span class="credit-name" style="color: #3b82f6;">Raju</span> | &copy; ${year} All rights reserved!`;
   }
   
   // Also update year span if it exists (for other pages)
